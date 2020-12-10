@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <hr>
+<!--
+====================================
+            Position
+====================================
+-->
+    <p class="absolute">Hola</p>
+    <p class="relative">Relative</p>
+
+
+    <!-- Excepción del absolute -->
+    <div class="relative tall">
+        <p class="absolute">Absolute inside container</p>
+    </div>
+
+
+    <p class="fixed">Soy fixed</p>
+    <span class="sticky">Soy sticky</span>
+
+
+    <hr>
+<!--
+====================================
+            Display
+====================================
+-->
+    <p>Soy block [Ocupar el 100% ancho del padre]</p>
+    <span>Soy inline [Ocupa el 100% de su contenido]</span>
+
+    <p class="inline">SOy un p inline</p>
+    <span class="block">Soy un span de bloque</span>
+    <p class="inlineBlock">Soy un p inline-block</p>
+
+    <hr>
+
+<!--
+====================================
+            Flexbox
+====================================
+-->
+
+    <div class="flex">
+        <p>Elemento 1</p>
+        <p>Elemento 2</p>
+        <p>Elemento 3</p>
+        <p>Elemento 4</p>
+        <p>Elemento 5</p>
+    </div>
+
+<!--
+====================================
+            Ocultar cosas
+====================================
+-->
+    <p class="hide display">Esto no se debería de ver</p>
+    <p class="hide visibility">Esto no se debería de ver</p>
+    <p class="hide opacity">Esto no se debería de ver</p>
+
+<!--
+====================================
+            DISPLAY
+====================================
+-->
+
+    <div class="checkboxHack">
+        <label for="cb">Hide/Show super secret message</label>
+        <input type="checkbox" id="cb">
+        <div>
+            <p>Hey!, CSS is awesome</p>
+        </div>
+    </div>
+</body>
+</html>

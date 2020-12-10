@@ -1,0 +1,145 @@
+/*
+    Contar transform
+    Contar animaciones
+*/
+
+/*
+====================================
+            POSITION
+====================================
+*/
+
+.absolute {
+    /*
+    ** Posición sea relativa al "body" o a un ancestro relative
+    ** El resto de elementos lo ignoran
+    ** Se puede aplicar left, right, top, bottom
+    */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.relative {
+    /*
+    ** Comienza a pintarse donde debería por nacimiento
+    ** Se puede aplicar left, right, top, bottom
+    ** Consigue que el absolute sea respecte al relative y no al body
+    */
+    position: relative;
+    top: 10px;
+}
+
+.fixed {
+    /*
+    ** Posición relativa al viewport
+    ** Se puede aplicar left, right, top, bottom
+    */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.sticky {
+    /* TODO revisar left y right */
+
+    /*
+    ** Si su posición original se ve en el viewport o está pro debajo de él funciona como un static
+    ** Si su posición ha llegado a un borde del viewport, funciona como un fixed
+    ** Cuando el borde ha llegado al borde, se puede usar left, right, bottom, top
+    */
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    /* right: 0px; */
+}
+
+.tall {
+    height: 200px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+}
+
+/*
+====================================
+            DISPLAY
+====================================
+*/
+
+.inline {
+    /* Ocupa tan solo lo que ocupa el contenido pero no permite usar width ni height */
+    display: inline;
+}
+
+.block {
+    /* Ocupa el 100% del ancho del body (A no ser que indiques lo contrario) */
+    display: block;
+    height: 200px;
+}
+
+.inlineBlock {
+    /* Lo mejor de los 2 mundos, por un lado ocupa lo que el contenido, pero puedes usar width y height */
+    display: inline-block;
+    height: 200px;
+}
+
+/*
+====================================
+            FLEXBOX
+====================================
+*/
+
+.flex { /* Siempre tiene que ser el padre */
+    /* align last line flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+
+}
+
+.flex p {
+    /* min-width: 200px; */
+    margin: 0;
+}
+
+/*
+====================================
+            OCULTAR COSAS
+====================================
+*/
+
+.hide.display {
+    display: none;
+}
+
+.hide.visibility {
+    visibility: hidden;
+}
+
+.hide.opacity {
+    opacity: 0;
+}
+
+/*
+====================================
+            CHECKBOX HACK
+====================================
+*/
+
+.checkboxHack input[type="checkbox"], .checkboxHack div {
+    display: none;
+}
+
+.checkboxHack label {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkboxHack input[type="checkbox"]:checked + div {
+    display: block;
+}

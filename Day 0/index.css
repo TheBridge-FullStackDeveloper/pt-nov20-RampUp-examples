@@ -1,0 +1,18 @@
+/*
+    VS CODE
+    Extensiones (Mandar por slack) []
+    Emmet (Mandar cheatSheet y prácticas)
+    CSS Bento
+    https://www.w3schools.com/css/css_pseudo_elements.asp
+    https://flukeout.github.io/
+
+    git
+*/
+
+p::first-line {
+    font-size: 1.5em;
+}
+
+p::first-letter {
+    color: red;
+}
