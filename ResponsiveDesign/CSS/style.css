@@ -1,0 +1,53 @@
+header {
+    text-align: center;
+}
+
+#featured {
+    background: red;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#featured img {
+    width: 150px;
+}
+
+.maestro div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.maestro div section {
+    background-color: red;
+    border-radius: 10px;
+    min-width: calc(50% - 40px);
+    margin: 10px;
+
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.maestro h2 {
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) and (max-width: 999px) {
+    .maestro div section {
+        min-width: calc(33% - 40px);
+        background-color: cyan;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .maestro div section {
+        min-width: calc(25% - 40px);
+        background-color: darkgreen;
+    }
+}
