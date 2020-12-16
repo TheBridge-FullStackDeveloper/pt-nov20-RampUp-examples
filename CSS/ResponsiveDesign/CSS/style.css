@@ -51,3 +51,11 @@ header {
         background-color: darkgreen;
     }
 }
+
+
+@media print {
+    h3, blockquote {
+        margin-top: 10px;
+        font-style: italic;
+    }
+}
