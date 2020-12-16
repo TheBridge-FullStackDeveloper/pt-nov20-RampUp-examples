@@ -39,12 +39,27 @@ header {
     text-align: center;
 }
 
+
+/*
+    @media sirve para consultar el tipo de dispositivo
+    Pudiendo aplica run css dependiendo de si usamos:
+        Pantalla
+        Lector de pantalla
+        Impresora
+
+    Y además podemos aplicar un css dependiendo del tamaño
+    de la pantalla
+*/
+
+/* Pantallas entre 700px y 999px */
 @media screen and (min-width: 700px) and (max-width: 999px) {
     .maestro div section {
         min-width: calc(33% - 40px);
         background-color: cyan;
     }
 }
+
+/* Pantallas de más de 1000px */
 @media screen and (min-width: 1000px) {
     .maestro div section {
         min-width: calc(25% - 40px);
@@ -52,7 +67,7 @@ header {
     }
 }
 
-
+/*@media para impresoras*/
 @media print {
     h3, blockquote {
         margin-top: 10px;
