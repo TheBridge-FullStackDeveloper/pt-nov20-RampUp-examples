@@ -315,4 +315,4 @@ switch (sexo) {
         console.log("Sexo no identificado");
 }
 
-//los case han de ser una constante
+//los case han de ser una constante no una expresión booleana
